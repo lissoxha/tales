@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style> </style>
+  <title>Image Clicker Game</title>
+</head>
+<link rel="stylesheet" href="stylegame.css">
+<body>
+  <div id="name-screen">
+    <div id="welcome-message">Добро пожаловать в игру!</div>
+    <input type="text" id="player-name" placeholder="Как тебя зовут?">
+    <button id="start-game-button" onclick="startGame()">Начать игру!</button>
+    <img id="fox-image" src="imagesgame/волк.png" alt="Fox">
+    <img id="wolf-image" src="imagesgame/лиса.png" alt="Wolf">
+  </div>
+<div id="menu-screen">
+  <div id="welcome-message">Выбери режим игры</div>
+  <button id="button1"  onclick="startLevel(1)">Легкий</button>
+  <button id="button2" onclick="startLevel(2)">Средний</button>
+  <button id="button3" onclick="startLevel(3)">Сложный</button>
+</div>
+  <div id="rules-image">
+    <img src="imagesgame/уровень0.png" alt="Правила игры">
+  </div>  
+  <div id="rabbit">
+    <img src="imagesgame/rabbit.png" alt="Rabbit">
+  </div>
+  <div id="pinky">
+    <img src="imagesgame/rabbitpink.png" alt="Pinky">
+  </div>
+  <div id="timer">Time: 20
+  </div>
+  <div id="time">
+    <img src="imagesgame/time.png" alt="Time">
+  </div>
+  <div id="level">
+    <img src="imagesgame/level.png" alt="Level">
+  </div>
+  <div id="game-container"></div>
+  <div id="result">
+    <img id="result-image" src="imagesgame/карточка2.png" alt="You lost!">
+    <span id="result-message"></span>
+  </div>
+  <script src="scriptgame.js" ></script>
+</body>
+</html>

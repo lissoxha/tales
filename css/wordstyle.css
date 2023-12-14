@@ -1,0 +1,76 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    white-space: nowrap;
+    overflow: auto; 
+}
+
+.draggable {
+    cursor: grab;
+    user-select: none;
+    position: absolute;
+    font-family: Calibri;
+    border: 2px solid rgb(87, 126, 87); 
+}
+
+#draggedElement {
+    position: fixed;
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid gray;
+    display: none;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+#clickInfo {
+   
+   position: fixed;
+   top: 0;
+   right: 0;
+   padding: 40px;
+   margin-top: 310px;
+   margin-right: 530px;
+   font-family: Calibri;
+   background-color:  rgb(163, 202, 163);
+}
+
+.light-green-rectangle {
+    position: fixed;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(163, 202, 163);
+    margin-top: 50px; 
+    margin-left: -750px; 
+    margin-right: 100px;
+}
+
+#inputString {
+    padding: 8px;
+    margin-bottom: 10px; 
+    font-size: 16px; 
+    width: 300px; 
+    border: 1px solid #ccc; 
+}
+
+#parseButton {
+    padding: 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    background-color: #6ea870; 
+    color: #fff; 
+    border: none; 
+    border-radius: 4px; 
+}
+
+#parseButton:hover {
+    background-color: rgb(84, 120, 86); 
+}
